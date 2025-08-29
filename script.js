@@ -1,10 +1,4 @@
-/* script.js - To-Do app with localStorage persistence + filters */
 
-/*
-Data model:
-  tasks: Array of objects { id: string, text: string, completed: boolean }
-Stored as JSON at localStorage key 'todo.tasks'
-*/
 
 const STORAGE_KEY = 'todo.tasks';
 
@@ -169,3 +163,4 @@ function updateCount() {
   const total = tasks.length;
   taskCountEl.textContent = `${activeCount} task${activeCount !== 1 ? 's' : ''} left • ${total} total`;
 }
+
